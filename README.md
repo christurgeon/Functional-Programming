@@ -1,2 +1,2 @@
-# Imperative-Programming
-My journey in imperative programming (Prolog, Haskell, Scheme)
+# Functional-Programming
+My journey in functional programming (Prolog, Haskell, Scheme)
