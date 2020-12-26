@@ -30,6 +30,15 @@ To run the application first load it ```swipl -l parser.pl``` then search for th
 % ProdSeq = [0, 1, 4, 6, 2, 4, 6, 3],
 % V = -2.
 ```
+where ProdSeq is the sequence of productions applied to get the result and V is the actual result.
 
 ## Scheme
+
+Lastly, in the Scheme subdirectory you'll find another two applications. The first is ```lis.rakt``` which computes the longest increasing subsequence using a polynomial and brute force solution. This was developed in R5RS legacy scheme in the DrRacket environment. See below on how to run. Simply replace ```lis_fast``` with ```list_slow``` to switch between algorithms.
+
+ ```(lis_fast `(1 2 3 3 5 4 9))``` should produce ```(1 2 3 3 5 9)```
+ 
+ Secondly, we have ```yabi.rakt``` which interprets then evaluates boolean expressions. In order to run, you must build a list of boolean expressions and pass them in as list of lists to ```myinterpreter``` which will evaluate each and return a list wherein each element is the boolean result of the evaluated expression at that index within the input list. See below for an example.
+ 
+```(myinterpreter ((prog (myor false false)) (prog (myand true false))))``` should produce ```(#f #f)```
 
